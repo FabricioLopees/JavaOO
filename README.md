@@ -1,2 +1,2 @@
-**_Este repositório será para criar meus primeiros códigos em java. Ele é destinado para fazer testes enquanto aprendo o básico da linguagem java, para então começar a desenvolver projetos simples, e assim ir progredindo._**
-
+**_Este repositório será para criar meus primeiros códigos em java. Ele é destinado para fazer testes enquanto aprendo o básico da linguagem java, para então começar a desenvolver projetos simples, e assim ir progredindo. Este estudo está baseado no conteúdo da Alura [Java e Orientação a Objetos.](https://www.alura.com.br/apostila-java-orientacao-objetos)
+A pasta [`exercises`](exercicios) possui alguns exercícios e desafios (resolvidos) propostos pelo material da alura._**
