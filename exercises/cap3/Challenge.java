@@ -1,4 +1,4 @@
-public class Desafio{
+public class Challenge{
 	public static void main(String[] args){
 		/* DESAFIOS: FIBONACCI
 		   Faça o exercício da série de Fibonacci usando apenas duas variáveis.
