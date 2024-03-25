@@ -1,6 +1,4 @@
-# Capítulo 3: Variáveis Primitivas e Controle de Fluxo
-
-## Tipos primitivos e valores
+# Capítulo 3: Variáveis Primitivas
 
 Uma variável primitiva se difere da variável para objetos. A variável primitiva realmente armazena o valor que lhe atribuimos. A váriavel para criar um objeto não armazena o objeto criado, mas faz uma referência a este objeto.
 
