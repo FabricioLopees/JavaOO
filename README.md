@@ -6,10 +6,15 @@ A pasta [`exercises`](exercises) possui alguns exercícios e desafios (resolvido
 ## Lista das minhas anotações
 
 - [Capítulo 2 - Máquina Virtual](notes/cap2.md)
-	- Máquina virtual;
+	- Máquina virtual
 	- HOTSPOT
 	- JIT (Just In Time)
 - [Capítulo 3 - Variáveis Primitivas](notes/cap3.md)
-	- Variáveis - tipos e tamanhos;
-	- Casting - operador de conversão de tipo;
-	- Operador de incremento;
+	- Variáveis - tipos e tamanhos
+	- Casting - operador de conversão de tipo
+	- Operador de incremento
+- [Capítulo 4 - Orientação a Objetos](notes/cap4.md)
+	- Classe
+	- Objeto
+	- Classes e Objetos em Java
+	- Variável de referência
