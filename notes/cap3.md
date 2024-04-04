@@ -42,7 +42,7 @@ Após o casting: 5
 
 ## Tipo e Tamanho das Variáveis Primitivas no Java
 
-![Tabela - Tipo e Tamanho das Variáveis Primitivas no Java](../img/primitiveVariables-typesAndSize.png)
+![Tabela - Tipo e Tamanho das Variáveis Primitivas no Java](../img/java-primitive-variables.png)
 
 ## Operador de Incremento
 
