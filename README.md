@@ -18,3 +18,10 @@ A pasta [`exercises`](exercises) possui alguns exercícios e desafios (resolvido
 	- Objeto
 	- Classes e Objetos em Java
 	- Variável de referência
+- [Capítulo 5 - Modificadores de Acesso e Atributos de Classe](notes/cap5.md)
+	- Modificadores de acesso
+	- Interface
+	- Encapsulamento
+	- Getters e Setters
+	- Contrutores
+	- Palavra-chave *static*
