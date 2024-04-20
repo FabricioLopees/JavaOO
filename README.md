@@ -25,3 +25,5 @@ A pasta [`exercises`](exercises) possui alguns exercícios e desafios (resolvido
 	- Getters e Setters
 	- Contrutores
 	- Palavra-chave *static*
+- Capítulo 6 - Eclipse IDE (*não possui anotções*)
+	- Aprendendo usar o Eclipse
