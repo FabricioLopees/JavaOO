@@ -1,0 +1,108 @@
+1. Modele uma conta. A ideia aqui é apenas modelar, isto é, identificar quais informações são importantes. Desenhe no papel tudo o que uma Conta tem e tudo o que ela faz. Ela deve ter o nome do titular (String), o número (int), a agência (String), o saldo (double) e uma data de abertura (String). Além disso, a conta deve fazer as seguintes operações: sacar para retirar um valor do saldo; depositar a fim de adicionar um valor ao saldo, calculaRendimento para devolver o seu ganho mensal.
+
+2. Transforme o modelo acima em uma classe Java. Teste-a usando uma outra classe que tenha o main. Você deve criar a classe da conta com o nome Conta, mas pode nomear como quiser a classe de testes, por exemplo, pode chamá-la TestaConta. Contudo, ela deve necessariamente ter o método main.
+
+A classe Conta deve conter, além dos atributos mencionados anteriormente, pelo menos os seguintes métodos:
+
+- saca que recebe um valor como parâmentro e o retira do saldo da conta;
+- deposita que recebe um valor como parâmentro e o adiciona ao saldo da conta;
+- calculaRendimento que não recebe parâmentro algum e devolve o valor do saldo multiplicado por 0.1.
+
+
+3. Na classe Conta, crie um método recuperaDadosParaImpressao() que não recebe parâmetro, mas devolve o texto com todas as informações da nossa conta para efetuarmos impressão.
+
+Dessa maneira, você não precisa ficar copiando e colando um monte de System.out.println() para cada mudança  e teste que fizer com cada um de seus funcionários, você simplesmente fará: 
+
+Conta c1 = new Conta();
+System.out.println(c1.recuperaDadosParaImpressao());
+
+Veremos, mais à frente, o método toString, que é uma solução muita mais elegante para mostrar a representação de um objeto como String, além de não jogar tudo para o System.out (só se você desejar)
+
+
+4. Na classe de teste dentro do bloco main, construa duas contas com o new e compare-as com == . E se eles tiverem os mesmos atributos? Para isso, você precisará criar outra referência:
+
+Conta c1 = new Conta();
+c1.ttitular = "Danilo";
+c1.saldo = 100;
+
+COnta c2 = new Conta();
+c2.titular = "Danilo";
+c2.saldo = 100;
+
+if (c1 == c2){
+	System.out.println("iguais");
+}else{
+	System.out.println("diferentes");
+}
+
+5. Agora, crie duas refências para a mesma conta e compare-as com o ==. Tire suas conclusões. A cfim de criar duas referências para a mesma conta:
+
+Conta c1 = new Conta();
+c1.titular = "Hugo";
+c1.saldo = 100;
+
+c2 = c1;
+
+O que acontece com o if do exercício anterior?
+
+6. (Opcional) Em vez de utilizar uma String para representar a data, crie uma outra classe chamada Data. Ela tem três campos int para dia, mês e ano. Faça com que sua conta passe a usá-la (é parecido com o último exemplo da explicação, em que a Conta passou a ter referência a um Cliente).
+
+class Conta{
+	Data dataDeAbertura; // qual é o valor default aqui?
+	// seus outros atributos e métodos
+}
+
+class Data {
+	int dia;
+	int mes;
+	int ano;
+}
+
+MOdifique sua classe TestaConta para que você crie uma Data e a atribua à Conta:
+
+Conta c1 = new Conta();
+//...
+Data data = new Data(); // ligação!
+c1.dataDeAbertura = data;
+
+Faça o desenho do estado da memória quando criarmos uma Conta.
+
+7. (Opcional) Modifique seu método recuperaDadosParaImpressao para que ele devolva o valor da dataDeAbertura daquela conta:
+
+class Conta{
+
+	// seus outros atributos e métodos
+	Data dataDeAbertura;
+
+	String recuperaDadosParaImpressao(){
+		String dados = "\nTitular: " + this.titular;
+		// imprimpir aqui os outros atributos
+
+		dados += "\nDia: " + this.dataDeAbertura.dia;
+		dados += "\nMes: " + this.dataDeAbertura.mes;
+		dados += "\nAno: " + this.dataDeAbertura.ano;
+		return dados;
+	}	
+}
+
+8. (Opcional) O que acontece se você tentar acessar um atributo diretamente na classe? Por exemplo:
+
+	Conta.saldo = 1234;
+
+Este código faz sentido? E este:
+	
+	Conta.calculaRendimento();
+
+Faz sentido perguntar ao esquema da Conta seus valor anual?
+
+9. (Opcional e avançado) Crie um método na classe Data que devolva o valor formatado da data, isto é, devolva uma String com "dia/mês/ano". Tudo isso para que o método recuperaDadosParaImpressao da classe Conta possa ficar assim:
+
+class Conta{
+	// atributos e métodos
+
+	String recuperaDadosParaImpressao(){
+	// imprime outros atributos...
+	dados += "\nData de abertura: " + this.dataDeAbertura.formatada();
+	return dados;
+	}
+}
